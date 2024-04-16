@@ -150,9 +150,114 @@ Stock Ticker: CEG
 #### 6. Loading an LLM locally
 
 Link to LLM: https://huggingface.co/google/gemma-7b-it
-   
+
+
+
+
 #### 7. Generating text with an LLM
 
+
+```
+def prompt_formatter(query: str,
+                     context_items: list[dict]) -> str:
+    """
+    Augments query with text-based context from context_items.
+    """
+    # Join context items into one dotted paragraph
+    context = "- " + "\n- ".join([item["sentence_chunk"] for item in context_items])
+
+    # Create a base prompt with examples to help the model
+    # Note: this is very customizable, I've chosen to use 3 examples of the answer style we'd like.
+    # We could also write this in a txt file and import it in if we wanted.
+    base_prompt = """Based on the following context items, please answer the query.
+Give yourself room to think by extracting relevant passages from the context before answering the query.
+Don't return the thinking, only return the answer.
+Make sure your answers are as explanatory as possible.
+Use the following examples as reference for the ideal answer style.
+\nExample 1:
+Query: What are specific State/Federal Regulations in the utility sector?
+Answer: Sure, here is the answer to the query:  The utility sector is subject to
+regulation by a number of federal, state, and local agencies. The federal
+government regulates wholesale sales of electricity rates and interstate
+transmission of electricity, including System Energys sales of capacity and
+energy from Grand Gulf to Entergy Arkansas, Entergy Louisiana, Entergy
+Mississippi, and Entergy New Orleans pursuant to the Unit Power Sales Agreement.
+State public utility commissions have jurisdiction over services and facilities,
+rates and charges, accounting, valuation of property, depreciation rates and
+various other matters.
+≈
+Query: Which companies mention renewable engergy?
+Answer: The text mentions several companies that are involved in renewable energy,
+including AES, Asus, AWR, GSWC, BVESI, and Air Products. AES Clean Energy is
+specifically highlighted as a company that is actively developing and
+implementing renewable energy solutions.
+\nExample 3:
+Query: How many employees do utility companies have?
+Answer: The text describes various companies and their employee counts as of December 31, 2022:
+
+- **ASUS:** Had a total of 264 employees.
+- **AWR:** Had a total of 811 employees.
+- **GSWC:** Had 501 employees.
+- **BVESI:** Had 46 employees.
+
+\nExample 4:
+Query: Who uses coal as an energy source?
+Answer: The text mentions several companies that use coal as an energy source, including
+Consumers, Avista Utilities, and NorthWestern. Consumers' coal-fueled generating
+units burned six million tons of coal and produced a combined total of 10,217
+GWh of electricity in 2022. Avista Utilities owns the following thermal
+generating resources that use coal as fuel: the combined cycle natural gas-fired
+CT, known as Coyote Springs 2, located near Boardman, Oregon, a 15 percent
+interest in Units 3 and 4 of Colstrip, a coal-fired boiler generating facility
+located in southeastern Montana, and the Kettle Falls GS in northeastern
+Washington.
+
+
+\nExample 4:
+Query: Who would be negatively impacted by environmental, social, and governance (ESG)?
+Answer: The text describes the potential negative impacts of rapidly
+changing stakeholder expectations and standards with respect to PGEs
+environmental, social, and governance (ESG) programs on various parties.
+According to the text, individuals and organizations that would be negatively
+impacted include Consumers, Avista Utilities, and PGE.  Consumers' coal-fueled
+generating units burned six million tons of coal and produced a combined total
+of 10,217 GWh of electricity in 2022. Avista Utilities owns thermal generating
+resources that use coal as fuel, including the combined cycle natural gas-fired
+CT, known as Coyote Springs 2, located near Boardman, Oregon, and the Kettle
+Falls GS in northeastern Washington. Therefore, Consumers and Avista Utilities
+are directly impacted by the environmental impact of coal-fired generating
+units.  PGE, on the other hand, faces the risk of increased costs and reduced
+access to capital due to rapidly changing stakeholder expectations and standards
+with respect to ESG programs. Investors, lenders, rating agencies, customers,
+regulators, employees, and other stakeholders are increasingly evaluating
+companies based on their ESG programs and metrics. Based on PGEs ESG profile,
+investors and lenders may elect to increase their required returns on capital
+offered to the Company, reallocate capital, or not commit capital as a result of
+their assessment of the Companys ESG profile. Such actions by investors and
+lenders could increase PGEs cost of, or access to, capital and financing.
+
+
+\nNow use the following context items to answer the user query:
+{context}
+\nRelevant passages: <extract relevant passages from the context here>
+User query: {query}
+Answer:"""
+
+    # Update base prompt with context items and query
+    base_prompt = base_prompt.format(context=context, query=query)
+
+    # Create prompt template for instruction-tuned model
+    dialogue_template = [
+        {"role": "user",
+        "content": base_prompt}
+    ]
+
+    # Apply the chat template
+    prompt = tokenizer.apply_chat_template(conversation=dialogue_template,
+                                          tokenize=False,
+                                          add_generation_prompt=True)
+    return prompt
+```
 
 # Building a local RAG (Retrival Augmented Generation Pipeline) pipeline for 10-K documents
 
