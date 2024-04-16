@@ -34,6 +34,20 @@ In recent years, ESG-related shareholder proposals—an official vehicle through
 
 This analysis specifically examines the 966 US equities in which the Norwegian Sovereign Wealth Fund has invested. The $1.4 trillion fund, managed by the Norwegian government, originated from oil and gas resources discovered in the late 1960s on the Norwegian continental shelves. Serving as a strategic financial reserve, the fund holds stakes in about 9,000 companies worldwide, owning approximately 1.4 percent of every listed company globally. 
 
+| Sector                  | Number of Companies |
+|-------------------------|---------------------|
+| Basic Materials         | 63                  |
+| Communication Services | 35                  |
+| Consumer Cyclical       | 96                  |
+| Consumer Defensive      | 38                  |
+| Energy                  | 58                  |
+| Financial Services      | 153                 |
+| Healthcare              | 108                 |
+| Industrials             | 157                 |
+| Real Estate             | 87                  |
+| Technology              | 134                 |
+| Utilities               | 37                  |
+
 I have chosen to focus on this subset of publicly traded companies to benchmark US firms against European long-term sustainable investing strategies, specifically examining the Norwegian Sovereign Wealth Fund's voting guidelines. This approach aims to compare the governance and sustainability practices of American corporations with those promoted by one of Europe's most significant investors, known for its adherence to ESG principles.
 
 #### **Investors’ Support for “Pro-ESG” Shareholder Proposals at S&P 500 Companies**
@@ -201,287 +215,40 @@ various other matters.
 
 
 ```
-Query: Which companies mention ESG?
-[INFO] Time taken to get scores on 4467 embeddings: 0.00006 seconds.
+Query: Which utility companies have plans to expand into solar energy production?
+[INFO] Time taken to get scores on 4475 embeddings: 0.00006 seconds.
 Answer:
 
-The text mentions several companies that mention ESG, including Vistra, AES,
-Asus, AWR, GSWC, BVESI, and Air Products. Vistra, in particular, highlights its
-commitment to ESG initiatives and its goals for achieving net-zero carbon
-emissions by 2050. AES Clean Energy is also mentioned as a company that is
-actively developing and implementing renewable energy solutions.
+The text mentions several utility companies that have plans to expand into solar
+energy production, including AES Clean Energy, Consumers, and Entergy Louisiana.
+AES Clean Energy is actively developing and implementing renewable energy
+solutions, including solar energy. Consumers' coal-fueled generating units
+burned six million tons of coal and produced a combined total of 10,217 GWh of
+electricity in 2022. Entergy Louisiana has executed a 20-year agreement for 50
+MW from a to-be-constructed solar photovoltaic electric generating facility
+located in West Baton Rouge Parish, Louisiana.
 Context items:
-[{'page_number': 747,
-  'ticker': 'NFE',
+[{'page_number': 766,
+  'ticker': 'NI',
   'sector': 'Utilities',
-  'filing_date': '2023-03-01T13:46:49-05:00',
-  'sentence_chunk': 'Ticker: NFE, Sector: Utilities, Filed At: 2023-03-01T13:46:49-05:00 material negative impact, including on our reputation and stock price. In addition, the standards for tracking and reporting on ESG matters are relatively new, have not been harmonized and continue to evolve. Our selection of disclosure frameworks that seek to align with various voluntary reporting standards may change from time to time and may result in a lack of comparative data from period to period. Moreover, our processes and controls may not always align with evolving voluntary standards for identifying, measuring, and reporting ESG metrics, our interpretation of reporting standards may differ from those of others, and such standards may change over time, any of which could result in significant revisions to our goals or reported progress in achieving such goals. In this regard, the criteria by which our ESG practices and disclosures are assessed may change due to the quickly evolving landscape, which could result in greater expectations of us and cause us to undertake costly initiatives to satisfy such new criteria. The increasing attention to corporate ESG initiatives could also result in increased investigations and litigation or threats thereof. If we are unable to satisfy such new criteria, investors may conclude that our ESG and sustainability practices are inadequate.',
-  'chunk_char_count': 1369,
-  'chunk_word_count': 208,
-  'chunk_token_count': 342.25,
-  'embedding': array([ 1.43721327e-02,  7.45136850e-03, -1.32112168e-02,  1.69541575e-02,
-          3.90683953e-03,  1.24414952e-03, -1.52211916e-02, -9.29690339e-03,
-          1.18790492e-02, -1.87074505e-02,  1.26958396e-02,  6.32890314e-02,
-         -1.18369507e-02,  9.37120616e-02,  3.86604294e-02,  3.31246518e-02,
-          5.65718897e-02,  1.08596152e-02,  2.45588664e-02, -4.65810997e-03,
-         -2.50331918e-03,  1.75127629e-02,  1.01985158e-02,  5.78128453e-03,
-         -1.34709536e-03,  3.90800312e-02, -9.78624541e-03,  1.58031341e-02,
-         -1.08773988e-02, -5.79423159e-02,  3.58437784e-02, -2.03027278e-02,
-         -2.40407921e-02, -1.89550705e-02,  2.34221579e-06, -4.37589958e-02,
-         -7.42473975e-02,  1.29045304e-02,  4.15244065e-02,  3.51607502e-02,
-          1.00488653e-02, -3.82297896e-02, -1.82067044e-02,  1.01775266e-02,
-         -1.39323510e-02, -3.10640279e-02,  1.80607345e-02,  4.80374368e-03,
-         -4.60774871e-03, -2.41797185e-03, -5.90205193e-03,  9.16290097e-03,
-         -9.59015638e-02, -3.31885405e-02, -1.37597797e-02,  1.11617940e-02,
-         -3.94518264e-02, -1.91273578e-02, -4.75087725e-02, -4.06478234e-02,
+  'filing_date': '2023-02-22T16:23:21-05:00',
+  'sentence_chunk': 'Ticker: NI, Sector: Utilities, Filed At: 2023-02-22T16:23:21-05:00 Schahfer Generating Station and upgrades to the transmission system to enhance our electric generation transition. Recent developments, including macro supply chain issues and U. S. federal policy actions, have created significant uncertainty around the availability of key input material necessary to develop and place our renewable energy projects in service. In the U. S., solar industry supply chain issues include the pending U. S. Department of Commerce investigation on Antidumping and Countervailing Duties Anti Circumvention Petition filed by a domestic solar manufacturer (the DOC Investigation), the Uyghur Forced Labor Protection Act, Section 201 Tariffs and persistent general global supply chain and labor availability issues. The most prominent effect of these issues is the significant curtailment of imported solar panels and other key components required to complete utility scale solar projects in the U. S. Any available solar panels may not meet the cost and efficiency standards of our currently approved projects and the incremental cost may not be recoverable through customer rates. As a result of the challenges in obtaining solar panels, many solar projects in the U. S. have been delayed or canceled. As we are in the midst of a transition to an electric generation portfolio with more renewable resources, including solar, our projects are subject to the effects of these issues.',
+  'chunk_char_count': 1475,
+  'chunk_word_count': 221,
+  'chunk_token_count': 368.75,
+  'embedding': array([ 1.80599913e-02,  2.24035736e-02, -3.28406505e-02, -2.20126566e-02,
+          1.12129152e-02, -2.02823225e-02,  2.89319456e-02, -1.52266165e-03,
+         -4.59301809e-04, -4.11665905e-03,  3.60108875e-02,  7.39563033e-02,
+          2.00368594e-02,  5.93284331e-02,  2.53946427e-02,  3.10788024e-02,
+          8.50221589e-02,  1.83278900e-02,  1.55767880e-03, -7.40996236e-03,
+         -2.59554926e-02, -8.17613117e-03, -1.47668766e-02,  1.80975012e-02,
+         -2.19128914e-02,  1.35437753e-02, -2.25015804e-02, -3.08008697e-02,
 ```
 
-# Building a local RAG (Retrival Augmented Generation Pipeline) pipeline for 10-K documents
+# Conclustion
 
-## Step 1: Data Collection
+This project takes a look at 
 
-### Step 1A: Get list of US Equities held by Norewegian Wealth Fund from 2013-2023
-
-
-A link to the API can be found here: [Norges Bank Investment Management API](https://www.nbim.no/en/responsible-investment/voting/our-voting-records/api-access-to-our-voting/) 
-
-
-The code used to collect data can be found: _Step_1_DataCollection.ipynb_
-
-
-
-# Step 2: Use sec-api.io to pull 10-K by ticker: 
-
-See link: [SEC-API](https://sec-api.io/)
-
-```
-!pip install sec-api
-```
-
-See query: 
-
-```
-import pickle
-import re
-from tqdm import tqdm
-
-# Assuming `df_documents_info_cleaned` is your DataFrame containing the URLs and metadata
-documents_info = []
-
-for index, row in tqdm(df_documents_info_cleaned.iterrows(), total=df_documents_info_cleaned.shape[0], desc="Fetching and Cleaning Documents"):
-    # Extract necessary information from the row
-    ticker = row['ticker']
-    filedAt = row['filedAt']
-    sector = row['sector']
-    filing_url = row['linkToFilingDetails']
-    
-    # Fetch the document text for both sections 1 and 1A
-    section_1_text = extractorApi.get_section(filing_url, "1", "text")
-    section_1A_text = extractorApi.get_section(filing_url, "1A", "text")
-    
-    # Combine both sections' texts
-    combined_text = section_1_text + " " + section_1A_text  # Ensure there's a space between the two sections
-    
-    # Clean the combined section text
-    cleaned_combined_section = re.sub(r"\n|&#[0-9]+;", "", combined_text)
-    
-    # Append a dictionary for each document containing its metadata and cleaned combined text
-    documents_info.append({
-        'ticker': ticker,
-        'filedAt': filedAt,
-        'sector': sector,
-        'text': cleaned_combined_section
-    })
-
-# Serialize the list of dictionaries to a file using pickle
-with open('Cleaned_US_Item1_1A.pkl', 'wb') as f:
-    pickle.dump(documents_info, f)
-```
-
-Convert to Pandas Dataframe: 
-
-```
-# Load the serialized data from the pickle file
-with open('Cleaned_US_Item1_1A.pkl', 'rb') as f:
-    documents_info = pickle.load(f)
-```
-
-Example pull for a 10-K document, get section 1A Risks and clean the text) 
-![Screen Shot 2024-04-16 at 3 57 55 PM](https://github.com/R0bL/Project_Initiation_DS5500/assets/133535059/ed1a27c8-af72-43ce-92b6-4d343ccd2f6d)
-
-
-### For the sake of this example, filter out dataframe and only consider 10-K disclosures for 2023 in the Utility Sector
-
-```
-# Load the serialized data from the pickle file
-with open('Cleaned_US_Item1_1A.pkl', 'rb') as f:
-    documents_info = pickle.load(f)
-
-# Create a DataFrame from the documents_info list
-Cleaned_US_Item1_1A = pd.DataFrame(documents_info)
-
-df_2023 = Cleaned_US_Item1_1A[Cleaned_US_Item1_1A['filedAt'].str.startswith('2023')]
-
-unique_utility_df = df_2023[df_2023['sector'] == 'Utilities']
-
-```
-
-
-### Creating a PDF with Metadata (there way to do this) 
-```
-def draw_metadata(c, metadata, width, height):
-    """Draws metadata at the top of each page."""
-    c.setFont("Helvetica", 12)
-    c.drawString(72, height - 50, f"Ticker: {metadata['ticker']}, Sector: {metadata['sector']}, Filed At: {metadata['filedAt']}")
-
-def add_text_to_page(c, text, metadata, width, height):
-    """Adds text to a page ensuring metadata is drawn first and proper spacing is maintained."""
-    draw_metadata(c, metadata, width, height)
-    text_object = c.beginText(72, height - 100)  # Adjusted to leave space below the metadata
-    text_object.setFont("Helvetica", 10)
-    for line in text.split():
-        line = preprocess_text(line)  # Preprocess each line if necessary
-        if text_object.getX() + c.stringWidth(line) > width - 72:
-            text_object.textLine()  # Move to next line if text exceeds the page width
-        if text_object.getY() < 100:  # Check if we're near the bottom of the page
-            c.drawText(text_object)  # Draw the text collected so far
-            c.showPage()  # Start a new page
-            draw_metadata(c, metadata, width, height)  # Redraw metadata at top of the new page
-            text_object = c.beginText(72, height - 100)
-        text_object.textOut(line + " ")  # Add space between words
-    c.drawText(text_object)  # Make sure to draw any remaining text
-    c.showPage()  # Ensure a new page is started after finishing each company's text
-
-def create_pdf(df, filename):
-    """Creates a PDF file with each entry separated onto a new page with metadata at the top."""
-    c = canvas.Canvas(filename, pagesize=letter)
-    width, height = letter
-    for index, row in df.iterrows():
-        metadata = {'ticker': row['ticker'], 'sector': row['sector'], 'filedAt': row['filedAt']}
-        add_text_to_page(c, row['text'], metadata, width, height)
-    c.save()
-    print(f"PDF saved as {filename}")
-
-create_pdf(df=unique_utility_df, filename='utility.pdf')
-```
-
-# Step 3: 
-
-# Week 1 Report
-
-### Project Updates
-
-1. Access company list of Norwegian Wealth Fund API: 
-
-
-### Week 1 Goals
-
-1. Build company database
-
-2. File list of 10-K companie by industry: 
-
-# Sector Overview
-
-The following table provides an overview of the number of companies across various sectors:
-
-| Sector                  | Number of Companies |
-|-------------------------|---------------------|
-| Basic Materials         | 63                  |
-| Communication Services | 35                  |
-| Consumer Cyclical       | 96                  |
-| Consumer Defensive      | 38                  |
-| Energy                  | 58                  |
-| Financial Services      | 153                 |
-| Healthcare              | 108                 |
-| Industrials             | 157                 |
-| Real Estate             | 87                  |
-| Technology              | 134                 |
-| Utilities               | 37                  |
-
-
-
-
-
-
-
-# Week 2 Report
-
-### Project Updates
-
-1. Pull 10-K filings using sec-io
-2. Validate data using yfinance
-   
-
-### Week 2 Goals
-
-1. Clean text
-2. Prepare of embedding
-
-
-# Week 3 Report
-
-### Project Updates
-
-1. Create standarized notebooks to pull data
-2. Started running TF-IDF
-
-### Week 3 goals
-
-1. Create dataframe for embedding across 966 companies. 
-2. Generate U-MAP for a single time slice
-
-
-![Screen Shot 2024-03-19 at 7 43 41 PM](https://github.com/R0bL/Project_Initiation_DS5500/assets/133535059/37b3439d-2499-4e93-aafa-6526b6b12cf3)
-
-
-# Week 4 Report
-
-1. Apply ESG BERT See: https://www.sciencedirect.com/science/article/pii/S1544612324000096?via%3Dihub#da1
-
-Download the model from hugging face: https://huggingface.co/ESGBERT
-
-https://huggingface.co/climatebert/distilroberta-base-climate-sentiment
-
-2. Summarize text using GPT.
-   https://medium.com/@jan_5421/summarize-sec-filings-with-openai-gtp3-a363282d8d8
-
-
-# Week 5 Report
-
-Going to impliment a Retrieval-Augmented Generation (RAG) pipeline for 10-K disclousre text. 
-
-LLM to reference an authoritative knowledge base (10-K Text) outside the training data before generating a response. 
-
-See flowchart: 
-
-![PNG image](https://github.com/R0bL/Project_Initiation_DS5500/assets/133535059/60fc8fc5-60ee-4025-aa87-fa5328625b9f)
-
-
-Using Google Colab Pro to access A100 GPU for embeddings + Gemma 7B as a LLM
-
-GPU memory: 40 | Recommend model: Gemma 7B in 4-bit or float16 precision.
-
-```
-Note: the following is Gemma focused, however, there are more and more LLMs of the 2B and 7B size appearing for local use.
-if gpu_memory_gb < 5.1:
-    print(f"Your available GPU memory is {gpu_memory_gb}GB, you may not have enough memory to run a Gemma LLM locally without quantization.")
-elif gpu_memory_gb < 8.1:
-    print(f"GPU memory: {gpu_memory_gb} | Recommended model: Gemma 2B in 4-bit precision.")
-    use_quantization_config = True 
-    model_id = "google/gemma-2b-it"
-elif gpu_memory_gb < 19.0:
-    print(f"GPU memory: {gpu_memory_gb} | Recommended model: Gemma 2B in float16 or Gemma 7B in 4-bit precision.")
-    use_quantization_config = False 
-    model_id = "google/gemma-2b-it"
-elif gpu_memory_gb > 19.0:
-    print(f"GPU memory: {gpu_memory_gb} | Recommend model: Gemma 7B in 4-bit or float16 precision.")
-    use_quantization_config = False 
-    model_id = "google/gemma-7b-it"
-
-
-print(f"use_quantization_config set to: {use_quantization_config}")
-print(f"model_id set to: {model_id}")
-```
 
 Refrence: https://github.com/mrdbourke/simple-local-rag/tree/main
 
