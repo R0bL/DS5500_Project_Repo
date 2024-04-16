@@ -151,12 +151,6 @@ Stock Ticker: CEG
 
 Link to LLM: https://huggingface.co/google/gemma-7b-it
 
-
-
-
-#### 7. Generating text with an LLM
-
-
 ```
 def prompt_formatter(query: str,
                      context_items: list[dict]) -> str:
@@ -168,7 +162,6 @@ def prompt_formatter(query: str,
 
     # Create a base prompt with examples to help the model
     # Note: this is very customizable, I've chosen to use 3 examples of the answer style we'd like.
-    # We could also write this in a txt file and import it in if we wanted.
     base_prompt = """Based on the following context items, please answer the query.
 Give yourself room to think by extracting relevant passages from the context before answering the query.
 Don't return the thinking, only return the answer.
@@ -185,39 +178,6 @@ Mississippi, and Entergy New Orleans pursuant to the Unit Power Sales Agreement.
 State public utility commissions have jurisdiction over services and facilities,
 rates and charges, accounting, valuation of property, depreciation rates and
 various other matters.
-≈
-Query: Which companies mention renewable engergy?
-Answer: The text mentions several companies that are involved in renewable energy,
-including AES, Asus, AWR, GSWC, BVESI, and Air Products. AES Clean Energy is
-specifically highlighted as a company that is actively developing and
-implementing renewable energy solutions.
-\nExample 3:
-Query: How many employees do utility companies have?
-Answer: The text describes various companies and their employee counts as of December 31, 2022:
-
-- **ASUS:** Had a total of 264 employees.
-- **AWR:** Had a total of 811 employees.
-- **GSWC:** Had 501 employees.
-- **BVESI:** Had 46 employees.
-
-\nExample 4:
-Query: Who uses coal as an energy source?
-Answer: The text mentions several companies that use coal as an energy source, including
-Consumers, Avista Utilities, and NorthWestern. Consumers' coal-fueled generating
-units burned six million tons of coal and produced a combined total of 10,217
-GWh of electricity in 2022. Avista Utilities owns the following thermal
-generating resources that use coal as fuel: the combined cycle natural gas-fired
-CT, known as Coyote Springs 2, located near Boardman, Oregon, a 15 percent
-interest in Units 3 and 4 of Colstrip, a coal-fired boiler generating facility
-located in southeastern Montana, and the Kettle Falls GS in northeastern
-Washington.
-
-
-\nNow use the following context items to answer the user query:
-{context}
-\nRelevant passages: <extract relevant passages from the context here>
-User query: {query}
-Answer:"""
 
     # Update base prompt with context items and query
     base_prompt = base_prompt.format(context=context, query=query)
@@ -233,6 +193,45 @@ Answer:"""
                                           tokenize=False,
                                           add_generation_prompt=True)
     return prompt
+```
+
+#### 7. Generating text with an LLM
+
+
+```
+Query: Which companies mention ESG?
+[INFO] Time taken to get scores on 4467 embeddings: 0.00006 seconds.
+Answer:
+
+The text mentions several companies that mention ESG, including Vistra, AES,
+Asus, AWR, GSWC, BVESI, and Air Products. Vistra, in particular, highlights its
+commitment to ESG initiatives and its goals for achieving net-zero carbon
+emissions by 2050. AES Clean Energy is also mentioned as a company that is
+actively developing and implementing renewable energy solutions.
+Context items:
+[{'page_number': 747,
+  'ticker': 'NFE',
+  'sector': 'Utilities',
+  'filing_date': '2023-03-01T13:46:49-05:00',
+  'sentence_chunk': 'Ticker: NFE, Sector: Utilities, Filed At: 2023-03-01T13:46:49-05:00 material negative impact, including on our reputation and stock price. In addition, the standards for tracking and reporting on ESG matters are relatively new, have not been harmonized and continue to evolve. Our selection of disclosure frameworks that seek to align with various voluntary reporting standards may change from time to time and may result in a lack of comparative data from period to period. Moreover, our processes and controls may not always align with evolving voluntary standards for identifying, measuring, and reporting ESG metrics, our interpretation of reporting standards may differ from those of others, and such standards may change over time, any of which could result in significant revisions to our goals or reported progress in achieving such goals. In this regard, the criteria by which our ESG practices and disclosures are assessed may change due to the quickly evolving landscape, which could result in greater expectations of us and cause us to undertake costly initiatives to satisfy such new criteria. The increasing attention to corporate ESG initiatives could also result in increased investigations and litigation or threats thereof. If we are unable to satisfy such new criteria, investors may conclude that our ESG and sustainability practices are inadequate.',
+  'chunk_char_count': 1369,
+  'chunk_word_count': 208,
+  'chunk_token_count': 342.25,
+  'embedding': array([ 1.43721327e-02,  7.45136850e-03, -1.32112168e-02,  1.69541575e-02,
+          3.90683953e-03,  1.24414952e-03, -1.52211916e-02, -9.29690339e-03,
+          1.18790492e-02, -1.87074505e-02,  1.26958396e-02,  6.32890314e-02,
+         -1.18369507e-02,  9.37120616e-02,  3.86604294e-02,  3.31246518e-02,
+          5.65718897e-02,  1.08596152e-02,  2.45588664e-02, -4.65810997e-03,
+         -2.50331918e-03,  1.75127629e-02,  1.01985158e-02,  5.78128453e-03,
+         -1.34709536e-03,  3.90800312e-02, -9.78624541e-03,  1.58031341e-02,
+         -1.08773988e-02, -5.79423159e-02,  3.58437784e-02, -2.03027278e-02,
+         -2.40407921e-02, -1.89550705e-02,  2.34221579e-06, -4.37589958e-02,
+         -7.42473975e-02,  1.29045304e-02,  4.15244065e-02,  3.51607502e-02,
+          1.00488653e-02, -3.82297896e-02, -1.82067044e-02,  1.01775266e-02,
+         -1.39323510e-02, -3.10640279e-02,  1.80607345e-02,  4.80374368e-03,
+         -4.60774871e-03, -2.41797185e-03, -5.90205193e-03,  9.16290097e-03,
+         -9.59015638e-02, -3.31885405e-02, -1.37597797e-02,  1.11617940e-02,
+         -3.94518264e-02, -1.91273578e-02, -4.75087725e-02, -4.06478234e-02,
 ```
 
 # Building a local RAG (Retrival Augmented Generation Pipeline) pipeline for 10-K documents
