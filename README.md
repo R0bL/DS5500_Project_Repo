@@ -63,7 +63,7 @@ The code used to collect data can be found: ```_Step_2_SEC_EDGAR.ipynb_```
 Output from Step_1 can be found in Step_2 folder ```"cleaned_company_list.csv" ```
 
  
-#### 3. Data preprocessing: Ingesting text into a PDF
+#### 3. Data preprocessing: Converting text into a PDF
 
 Link to open source nlp preprocesser spaCy: https://spacy.io/api/sentencizer
 
@@ -71,12 +71,12 @@ The code used to collect data can be found: ```Step_3_DataPreprocessing.ipynb```
 
 Output of step 3: ```utitlites.pdf```
 
-#### 4. Embedding the chunks: use a pretrained model mpnet-base model 
+#### 4. Ingesting the PDF, preprocessing the text into chunks:  
 
 Link to hugging face: https://huggingface.co/sentence-transformers/all-mpnet-base-v2
 
 #### 5. Creating a sematic search pipeline between a user query and the text
-
+Embedding the chunks: use a pretrained model mpnet-base model
    
 #### 6. Loading an LLM locally
 
