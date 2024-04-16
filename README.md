@@ -100,6 +100,52 @@ Link to hugging face: https://huggingface.co/sentence-transformers/all-mpnet-bas
 
 #### 5. Creating the embeddings and sematic search pipeline between a user query and the text
 Embedding the chunks: use a pretrained model mpnet-base model
+
+```
+Query: 'Environmental, Social, Governance Reporting'
+
+Results:
+Score: 0.5620
+Text:
+If we are unable to enter into favorable contracts or to obtain the necessary
+regulatory and land use approvals on favorable terms, we may not be able to
+construct and operate our assets as anticipated, or at all, which could
+negatively affect our business, results of operations and financial condition.
+We could be negatively impacted by environmental, social, and governance (ESG)
+and sustainability-related matters. Governments, investors, customers, employees
+and other stakeholders are increasingly focusing on corporate ESG practices and
+disclosures, and expectations in this area are rapidly evolving. We have
+announced, and may in the future announce, sustainability-focused goals,
+initiatives, investments and partnerships. These initiatives, aspirations,
+targets or objectives reflect our current plans and aspirations and are not
+guarantees that we will be able to achieve them. Our efforts to accomplish and
+accurately report on these initiatives and goals present numerous operational,
+regulatory, reputational, financial, legal, and other risks, any of which could
+have a
+Page number: 704
+Stock Ticker: NFE
+
+
+Score: 0.5384
+Text:
+The following table presents employee information, including information about
+CBAs, as of December 31, 2022: ##TABLE_START Total Employees Covered by CBAs
+Number of CBAs CBAs New and Renewed in 2022 (a) Total Employees Under CBAs New
+and Renewed in 2022 3,342 21 1 74 ##TABLE_END__________ (a) Does not include
+CBAs that were extended in 2022 while negotiations are ongoing for renewal.
+Environmental Matters and Regulation We are subject to comprehensive and complex
+environmental legislation and regulation at the federal, state, and local
+levels, including requirements relating to climate change, air and water
+quality, solid and hazardous waste, and impacts on species and habitats. Our
+Board of Directors is responsible for overseeing the management of environmental
+matters. We have a management team to address environmental compliance and
+strategy, including the CEO, our Sustainability and Climate Strategy team, and
+other members of senior management. Performance of those individuals directly
+involved in environmental compliance and strategy is reviewed and affects
+compensation as part of the annual individual performance review process.
+Page number: 268
+Stock Ticker: CEG
+```
    
 #### 6. Loading an LLM locally
 
