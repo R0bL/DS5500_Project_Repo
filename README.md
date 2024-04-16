@@ -51,16 +51,25 @@ This project is broken down into a few steps.
    
 A link to the API can be found here: [Norges Bank Investment Management API](https://www.nbim.no/en/responsible-investment/voting/our-voting-records/api-access-to-our-voting/) 
 
-The code used to collect data can be found: _Step_1_DataCollection.ipynb_
+The code used to collect data can be found: ``` _Step_1_DataCollection.ipynb_```
 
 
 #### 2. Data Collection from SEC EDGAR System to get Corprate 10-K filings:
 
 Link to sec-api.io : https://sec-api.io/docs/sec-filings-item-extraction-api
+
+The code used to collect data can be found: ```_Step_2_SEC_EDGAR.ipynb_```
+
+Output from Step_1 can be found in Step_2 folder ```"cleaned_company_list.csv" ```
+
  
-#### 3. Data preprocessing: Ingesting text into a pdf then turn into dictionary, split into chunks and report on token count. 
+#### 3. Data preprocessing: Ingesting text into a PDF
 
 Link to open source nlp preprocesser spaCy: https://spacy.io/api/sentencizer
+
+The code used to collect data can be found: ```Step_3_DataPreprocessing.ipynb```
+
+Output of step 3: ```utitlites.pdf```
 
 #### 4. Embedding the chunks: use a pretrained model mpnet-base model 
 
@@ -74,7 +83,6 @@ Link to hugging face: https://huggingface.co/sentence-transformers/all-mpnet-bas
 Link to LLM: https://huggingface.co/google/gemma-7b-it
    
 #### 7. Generating text with an LLM
- 
 
 
 # Building a local RAG (Retrival Augmented Generation Pipeline) pipeline for 10-K documents
