@@ -98,7 +98,7 @@ Output is a list of dicitonaries with token count:
 
 Link to hugging face: https://huggingface.co/sentence-transformers/all-mpnet-base-v2
 
-#### 5. Creating a sematic search pipeline between a user query and the text
+#### 5. Creating the embeddings and sematic search pipeline between a user query and the text
 Embedding the chunks: use a pretrained model mpnet-base model
    
 #### 6. Loading an LLM locally
