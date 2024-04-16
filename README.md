@@ -101,6 +101,8 @@ Link to hugging face: https://huggingface.co/sentence-transformers/all-mpnet-bas
 #### 5. Creating the embeddings and sematic search pipeline between a user query and the text
 Embedding the chunks: use a pretrained model mpnet-base model
 
+See code for steps 5,6,7 in folder step_5_6_7 - ```Step_5_6_7Embeddings_LLM.ipynb```
+
 ```
 Query: 'Environmental, Social, Governance Reporting'
 
