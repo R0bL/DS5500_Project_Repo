@@ -51,14 +51,14 @@ This project is broken down into a few steps.
    
 A link to the API can be found here: [Norges Bank Investment Management API](https://www.nbim.no/en/responsible-investment/voting/our-voting-records/api-access-to-our-voting/) 
 
-The code used to collect data can be found: ``` _Step_1_DataCollection.ipynb_```
+The code used to collect data can be found: ``` Step_1_DataCollection.ipynb```
 
 
 #### 2. Data Collection from SEC EDGAR System to get Corprate 10-K filings:
 
 Link to sec-api.io : https://sec-api.io/docs/sec-filings-item-extraction-api
 
-The code used to collect data can be found: ```_Step_2_SEC_EDGAR.ipynb_```
+The code used to collect data can be found: ```Step_2_SEC_EDGAR.ipynb```
 
 Output from Step_1 can be found in Step_2 folder ```"cleaned_company_list.csv" ```
 
@@ -72,6 +72,29 @@ The code used to collect data can be found: ```Step_3_DataPreprocessing.ipynb```
 Output of step 3: ```utitlites.pdf```
 
 #### 4. Ingesting the PDF, preprocessing the text into chunks:  
+
+The code used to collect data can be found: ```Step_4_Preprocessing_text.ipynb```
+
+Output is a list of dicitonaries with token count:
+
+```
+{'page_number': 42,
+  'ticker': 'LNT',
+  'sector': 'Utilities',
+  'filing_date': '2023-02-24T16:03:25-05:00',
+  'sentence_chunk': '2) WPL - is a public utility engaged principally in the generation and distribution of electricity and the distribution and transportation of natural gas to retail customers in select markets in Wisconsin. WPL operates in municipalities pursuant to permits of indefinite duration and state statutes authorizing utility operation in areas annexed by a municipality. At December 31, 2022, WPL supplied electric and natural gas service to approximately 495,000 and 200,000 retail customers, respectively. WPL also sells electricity to wholesale customers in Wisconsin. 3) CORPORATE SERVICES - provides administrative services to Alliant Energy, IPL, WPL and AEF. 4) AEF - Alliant Energys non-utility holdings are organized under AEF, which manages a portfolio of wholly-owned subsidiaries and additional holdings, including the following distinct platforms: ATI - currently holds all of Alliant Energys interest in ATC Holdings. ATC Holdings is comprised of a 16% ownership interest in ATC and a 20% ownership interest in ATC Holdco LLC. ATC is an independent, for-profit, transmission-only company. ATC Holdco LLC holds an interest in Duke-American Transmission Company, LLC, a joint venture between Duke Energy Corporation and ATC, that owns electric transmission infrastructure in North America. ##',
+  'chunk_char_count': 1298,
+  'chunk_word_count': 190,
+  'chunk_token_count': 324.5},
+ {'page_number': 42,
+  'ticker': 'LNT',
+  'sector': 'Utilities',
+  'filing_date': '2023-02-24T16:03:25-05:00',
+  'sentence_chunk': 'TABLE_START 3 ##TABLE_ENDTable of Co ntents Corporate Venture Investments - includes various minority ownership interests in regional and national venture funds, including a global coalition of energy companies working together to help advance the transition towards a cleaner, more sustainable, and inclusive energy future, by identifying and researching innovative technologies and business models within the emerging energy economy. Non-utility Wind Farm - includes a 50% cash equity ownership interest in a 225 MW non-utility wind farm located in Oklahoma. Sheboygan Falls Energy Facility - is a 347 MW, simple-cycle, natural gas-fired EGU near Sheboygan Falls, Wisconsin, which is leased to WPL for an initial period of 20 years ending in 2025. Travero - is a diversified supply chain solutions company, including a short-line rail freight service in Iowa; a Mississippi River barge, rail and truck freight terminal in Illinois; freight brokerage services; and a rail-served warehouse in Iowa. B. INFORMATION RELATING TO ALLIANT ENERGY ON A CONSOLIDATED BASIS 1) HUMAN CAPITAL MANAGEMENT - Alliant Energys core purpose is to serve customers and build stronger communities. We constantly strive to attract, retain and develop a diverse and qualified workforce of high-performing employees, and create and foster an environment of inclusion and belonging for all employees.',
+  'chunk_char_count': 1376,
+  'chunk_word_count': 204,
+  'chunk_token_count': 344.0}]
+```
 
 Link to hugging face: https://huggingface.co/sentence-transformers/all-mpnet-base-v2
 
