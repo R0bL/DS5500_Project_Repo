@@ -213,30 +213,6 @@ located in southeastern Montana, and the Kettle Falls GS in northeastern
 Washington.
 
 
-\nExample 4:
-Query: Who would be negatively impacted by environmental, social, and governance (ESG)?
-Answer: The text describes the potential negative impacts of rapidly
-changing stakeholder expectations and standards with respect to PGEs
-environmental, social, and governance (ESG) programs on various parties.
-According to the text, individuals and organizations that would be negatively
-impacted include Consumers, Avista Utilities, and PGE.  Consumers' coal-fueled
-generating units burned six million tons of coal and produced a combined total
-of 10,217 GWh of electricity in 2022. Avista Utilities owns thermal generating
-resources that use coal as fuel, including the combined cycle natural gas-fired
-CT, known as Coyote Springs 2, located near Boardman, Oregon, and the Kettle
-Falls GS in northeastern Washington. Therefore, Consumers and Avista Utilities
-are directly impacted by the environmental impact of coal-fired generating
-units.  PGE, on the other hand, faces the risk of increased costs and reduced
-access to capital due to rapidly changing stakeholder expectations and standards
-with respect to ESG programs. Investors, lenders, rating agencies, customers,
-regulators, employees, and other stakeholders are increasingly evaluating
-companies based on their ESG programs and metrics. Based on PGEs ESG profile,
-investors and lenders may elect to increase their required returns on capital
-offered to the Company, reallocate capital, or not commit capital as a result of
-their assessment of the Companys ESG profile. Such actions by investors and
-lenders could increase PGEs cost of, or access to, capital and financing.
-
-
 \nNow use the following context items to answer the user query:
 {context}
 \nRelevant passages: <extract relevant passages from the context here>
