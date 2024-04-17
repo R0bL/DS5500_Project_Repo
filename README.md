@@ -266,63 +266,6 @@ https://python.langchain.com/docs/integrations/retrievers/sec_filings/
 
 # Refrence
 
-Refrence: https://github.com/mrdbourke/simple-local-rag/tree/main
-
-1. "Measuring Disclosure Using 8-K Filings"
-
-
-https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3354252
-
-
-* VDisc_Ct is the number of voluntary 8K items and associated exhibits
-* VDisc_WC is the number ofwords within the voluntary 8K items and associated exhibits
-
-2. "ESG In Corporate Filings: An AI Perspective"
-
-Tie the corporate actions on the environment to the investor expectations.
-
-https://arxiv.org/pdf/2212.00018.pdf
- 
-Used:
- * keywords corresponding to the SASB categories of ESG terms
-   
-Among the key findings are: 
- * lack of transparency among the ESG raters on how the scores are assigned;
- * lack of standards on how a particular concept is measured 
- * Questionable tradeoffs: high scores in one domain may offset very low scores in another area 
- * Absence of an overall score combining performance scores alongenvironmental, social and governance axes
- * lack of acknowledgement of stakeholder expectations leading to lower acceptance rates.
-   
-
-3. Capturing Firm Economic Events
-
-https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4510212#:~:text=To%20better%20capture%20events%20that,participants'%20uncertainty%20about%20that%20performance.
-
-
-* event-driven 8-K, Items (all 8-K items except Items 2.02, 7.01, 8.01, and 9.01)
-* disclosure-driven, Items 2.02, 7.01, and 8.01 constitute 8-K items with a voluntary disclosure component
-
-  
-4.  Data Extraction and Preprocessing
-
-Extract Relevant Sections: Identify and extract ESG-relevant sections from 8-K filings
-
-Text Cleaning: Standardize formatting and remove non-essential elements.
-
-Refrence: https://scholar.harvard.edu/jbenchimol/files/text-mining-methodologies.pdf
-
-5.  Labeling Data for Sentiment Analysis
-
-Develop a Labeling Guide: Define positive, negative, and neutral ESG sentiments.
-
-Manual Labeling: Label a subset of filings for training the sentiment analysis model.
-
-Refrence: https://aws.amazon.com/blogs/machine-learning/use-sec-text-for-ratings-classification-using-multimodal-ml-in-amazon-sagemaker-jumpstart/
-
-
-
-## Source: 
-
 
 1. Bourke, Mr D. "Simple Local RAG." GitHub, https://github.com/mrdbourke/simple-local-rag/tree/main. 
 
@@ -350,7 +293,9 @@ Refrence: https://aws.amazon.com/blogs/machine-learning/use-sec-text-for-ratings
 
 13.  Dubner, Stephen J. “Are E.S.G. Investors Actually Helping the Environment?” Freakonomics Radio, no. 546, Freakonomics, LLC, 14 June 2023, https://freakonomics.com/podcast/are-e-s-g-investors-actually-helping-the-environment/.
 
-14. "What Do Shareholders Propose?" Harvard Law School Forum on Corporate Governance, 16 Apr. 2024, https://corpgov.law.harvard.edu/2024/04/16/what-do-shareholders-propose/. 
+14. "What Do Shareholders Propose?" Harvard Law School Forum on Corporate Governance, 16 Apr. 2024, https://corpgov.law.harvard.edu/2024/04/16/what-do-shareholders-propose/.
+
+15. Sanderson, Grant. "But What is a GPT? Visual Intro to Transformers | Chapter 5, Deep Learning, 3Blue1Brown." *YouTube*, uploaded by 3Blue1Brown, https://www.youtube.com/watch?v=wjZofJX0v4M&vl=en
 
 
 
