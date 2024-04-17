@@ -66,6 +66,8 @@ I have chosen to focus on this subset of publicly traded companies to benchmark 
 ## The Goal
 The goal of this project is to equip large language models (LLMs) with domain-specific data derived from the 10-K disclosure filings of 968 publicly traded firms, as well as the Norwegian Wealth Fund's voting patterns on shareholder proposals. Enabling the LLMs to tailor their outputs, drawing context from authoritative sources concerning environmental, social, and governance (ESG) messaging and Corprate Goverannce. 
 
+![image](https://github.com/R0bL/DS5500_Project_Repo/assets/133535059/c92fb2d5-2bc7-482c-8b50-c606ddb1c3d0)
+
 ## An Overview: 
 
 This project is broken down into a few steps. 
