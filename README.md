@@ -19,6 +19,8 @@ ESG ratings play a role in guiding trillions of dollars in investments worldwide
 In recent years, ESG-related shareholder proposals—an official vehicle through which shareholders can interface with the board of directors—have become more prominent.
 
 #### Number of Shareholder Proposals by Sub-Categories, 2022-2023
+![Number of Shareholder Proposals by Sub-Categories, 2022-2023](https://github.com/R0bL/Project_Initiation_DS5500/assets/133535059/089b5330-35f6-46f3-9d53-eef8d96d84f4)
+
 ![image-31](https://github.com/R0bL/Project_Initiation_DS5500/assets/133535059/089b5330-35f6-46f3-9d53-eef8d96d84f4)
 
 #### The Challenges 
