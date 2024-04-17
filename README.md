@@ -1,5 +1,7 @@
 # Decoding Corporate Narratives: A RAG-Based Approach to Navigating 10-K Filings
 
+Robert Lalani 
+
 This project is an attempt to understand the shifting messaging ESG messaging in 10-K filings using a RAG (Retrival Augmented Generation Pipeline). 
 
 ## The Landscape
