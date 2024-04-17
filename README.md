@@ -247,7 +247,7 @@ Context items:
 
 # Conclustion
 
-This project takes a look at 
+This project employs a two-step process to analyze 10-K financial disclosures. First, it embeds both the user's query and the relevant textual context from the disclosures, ensuring precise alignment of the inquiry with the authoritative source. Second, this contextually enriched query is processed through the GEMMA-7b-it language model. This approach allows for targeted responses directly addressing the specifics of the source of information. Of the 24 questions tested, half came back with "The text does not mention < Query >, therefore I cannot answer this query.", I found that adding examples to the base prompt improved the performance. 
 
 
 Refrence: https://github.com/mrdbourke/simple-local-rag/tree/main
