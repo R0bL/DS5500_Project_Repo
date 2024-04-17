@@ -20,6 +20,7 @@ In recent years, ESG-related shareholder proposals—an official vehicle through
 
 #### Number of Shareholder Proposals by Sub-Categories, 2022-2023
 ![Number of Shareholder Proposals by Sub-Categories, 2022-2023](https://github.com/R0bL/Project_Initiation_DS5500/assets/133535059/089b5330-35f6-46f3-9d53-eef8d96d84f4)
+*Figure 1: Investors' Support for “Pro-ESG” Shareholder Proposals at S&P 500 Companies. Retrieved from [Harvard Law School Forum on Corporate Governance](https://corpgov.law.harvard.edu/2024/04/16/what-do-shareholders-propose/)*
 
 
 #### The Challenges 
