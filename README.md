@@ -248,7 +248,7 @@ Context items:
          -2.59554926e-02, -8.17613117e-03, -1.47668766e-02,  1.80975012e-02,
          -2.19128914e-02,  1.35437753e-02, -2.25015804e-02, -3.08008697e-02,
 ```
-
+Steps 5-7 adapted from: 
 # Conclustion
 
 This project employs a two-step process to analyze 10-K financial disclosures. First, it embeds both the user's query and the relevant textual context from the disclosures, ensuring precise alignment of the inquiry with the authoritative source. Second, this contextually enriched query is processed through the GEMMA-7b-it language model. This approach allows for targeted responses directly addressing the specifics of the source of information. Of the 24 questions tested, half came back with ```The text does not mention < Query >, therefore I cannot answer this query."```. I found that adding examples to the base prompt ```shown in step 6``` improved the performance. However, the simple framework makes it difficult to get relevant response from the LLM when looking at a time range or a diverse set of  sectors. 
