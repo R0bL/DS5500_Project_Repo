@@ -322,11 +322,35 @@ Refrence: https://aws.amazon.com/blogs/machine-learning/use-sec-text-for-ratings
 
 
 ## Source: 
-1.  Hartzmark, Samuel M., and Kelly Shue. "Counterproductive Sustainable Investing: The Impact Elasticity of Brown and Green Firms." 1 Nov. 2022, SSRN, https://ssrn.com/abstract=4359282 or http://dx.doi.org/10.2139/ssrn.4359282.
 
-2.  Dubner, Stephen J. “Are E.S.G. Investors Actually Helping the Environment?” Freakonomics Radio, no. 546, Freakonomics, LLC, 14 June 2023, https://freakonomics.com/podcast/are-e-s-g-investors-actually-helping-the-environment/.
 
-3.  
+1. Bourke, Mr D. "Simple Local RAG." GitHub, https://github.com/mrdbourke/simple-local-rag/tree/main. 
+
+2. "The Corporate Governance of Benedictine Abbeys: What Can We Learn from History?" SSRN, https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3354252.
+
+3. "The Effectiveness of Retrieval-Augmented Generation Models." arXiv, https://arxiv.org/pdf/2212.00018.pdf.
+
+4. "Corporate Responses to Environmental Challenges: The Role of Corporate Governance." SSRN, https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4510212. 
+
+5. Benchimol, Jonathan. "Text Mining Methodologies in Corporate Finance." Harvard University, https://scholar.harvard.edu/jbenchimol/files/text-mining-methodologies.pdf.
+
+6. "Quantifying the Impact of Financial News on Market Performance." SSRN, https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4622514
+
+7. Schimanski, Tobias. "Analyzing ESG with AI and NLP Tutorial 3: Fine-Tune Your Own Models." Medium, https://medium.com/@schimanski.tobi/analyzing-esg-with-ai-and-nlp-tutorial-3-fine-tune-your-own-models-e3692fc0b3c0. Accessed 
+
+8. "RAG 101: Demystifying Retrieval-Augmented Generation Pipelines." NVIDIA Developer Blog, https://developer.nvidia.com/blog/rag-101-demystifying-retrieval-augmented-generation-pipelines/.
+
+9. "Global Voting Guidelines." Norges Bank Investment Management, https://www.nbim.no/en/responsible-investment/voting/our-voting-records/global-voting-guidelines/.
+
+10. "A Review of the Retrieval-Augmented Generation for Language Modeling." arXiv, https://arxiv.org/abs/2005.11401. 
+
+11. Boykis, Vicki. "What Are Embeddings?" Vicki Boykis, https://vickiboykis.com/what_are_embeddings/index.html.
+
+12.   Hartzmark, Samuel M., and Kelly Shue. "Counterproductive Sustainable Investing: The Impact Elasticity of Brown and Green Firms." 1 Nov. 2022, SSRN, https://ssrn.com/abstract=4359282 or http://dx.doi.org/10.2139/ssrn.4359282.
+
+13.  Dubner, Stephen J. “Are E.S.G. Investors Actually Helping the Environment?” Freakonomics Radio, no. 546, Freakonomics, LLC, 14 June 2023, https://freakonomics.com/podcast/are-e-s-g-investors-actually-helping-the-environment/.
+
+14. "What Do Shareholders Propose?" Harvard Law School Forum on Corporate Governance, 16 Apr. 2024, https://corpgov.law.harvard.edu/2024/04/16/what-do-shareholders-propose/. 
 
 
 
