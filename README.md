@@ -247,13 +247,18 @@ Context items:
 
 # Conclustion
 
-This project employs a two-step process to analyze 10-K financial disclosures. First, it embeds both the user's query and the relevant textual context from the disclosures, ensuring precise alignment of the inquiry with the authoritative source. Second, this contextually enriched query is processed through the GEMMA-7b-it language model. This approach allows for targeted responses directly addressing the specifics of the source of information. Of the 24 questions tested, half came back with "The text does not mention < Query >, therefore I cannot answer this query.", I found that adding examples to the base prompt improved the performance. 
+This project employs a two-step process to analyze 10-K financial disclosures. First, it embeds both the user's query and the relevant textual context from the disclosures, ensuring precise alignment of the inquiry with the authoritative source. Second, this contextually enriched query is processed through the GEMMA-7b-it language model. This approach allows for targeted responses directly addressing the specifics of the source of information. Of the 24 questions tested, half came back with ```The text does not mention < Query >, therefore I cannot answer this query."```. I found that adding examples to the base prompt ```shown in step 6``` improved the performance. However, the simple framework makes it difficult to get relevant response from the LLM when looking at a time range or a diverse set of  sectors. 
 
 
-Refrence: https://github.com/mrdbourke/simple-local-rag/tree/main
+Integrating example-based prompts, as demonstrated in step 6, improved the model's performance. However, the simple framework sometimes fails to yield relevant responses, especially for queries covering various time frames or sectors. Focusing primarily on the utility sector, the approach could be broadened by using tools like LangChain to enhance textual analysis and enable extraction of visual data such as charts or images, enriching the analysis.
+
+https://python.langchain.com/docs/integrations/retrievers/sec_filings/
+
+
 
 # Refrence
 
+Refrence: https://github.com/mrdbourke/simple-local-rag/tree/main
 
 1. "Measuring Disclosure Using 8-K Filings"
 
