@@ -2,7 +2,6 @@
 
 Author: Robert Lalani 
 
-\text{Faithfulness Score} = \frac{\text{Number of Claims Inferred from Text}}{\text{Total Number of Claims}}
 
 This project is an attempt to understand the shifting messaging ESG messaging in 10-K filings using a RAG (Retrival Augmented Generation Pipeline). 
 
